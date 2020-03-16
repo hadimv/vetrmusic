@@ -12,8 +12,58 @@
             background-color: black;
 
         }
+
         audio {
             width: 100%;
+        }
+
+        #player {
+            border-radius: 300px;
+            background-color: #265AA6;
+            width: 990px;
+            height: 45px;
+            padding: 5px;
+            margin-top: 450px;
+        }
+
+        #play_button {
+            height: 30px;
+            margin-left: 360px;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+
+        #pause_button {
+            height: 30px;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+
+        #cover {
+            border-radius: 10px;
+            position: absolute;
+            height: 400px;
+            margin-left: 60px;
+            margin-right: 5px;
+            margin-top: -330px;
+        }
+
+        #streamicon {
+            height: 17px;
+            margin: 7px;
+            margin-left: 350px;
+        }
+
+        #buy {
+            height: 17px;
+            margin: 7px;
+            margin-left: 40px;
+        }
+
+        #download {
+            height: 17px;
+            margin: 7px;
+            margin-left: 40px;
         }
     </style>
 </head>
@@ -57,33 +107,66 @@
             <div class="col-6 mx-auto text-center">
                 <h1 class="text-white pt-2" style="font-size: 2.5vw;">Latest Music</h1>
             </div>
-            
-            <div class="col-11 mx-auto ">
+
+            <div class="col-11 mx-auto">
                 <div class="container-audio">
-                    <div class="col-6 mx-auto text-center">
-                        <h4 class="text-white pt-5 pb-3" style="font-size: 1.5vw;">Drink Some Water</h4>
+                    <img src="images/cover1-back.jpg" width="700px"
+                        style="float: right;margin-top: -410px;margin-right: -35px;" alt="">
+                    <div class="">
+                        <div id='player' style="position: relative;">
+                            <audio id="music_player">
+                                <source src="music/Drink.mp3" />
+                            </audio>
+                            <p style="position: absolute;color: azure; padding: 5px;">3</p>
+                            <input type="image" src="images/Cover_Lyric1.png" id="cover">
+                            <input type="image" src="images/play.png" onclick="play_aud()" id="play_button">
+                            <input type="image" src="images/pause.png" onclick="pause_aud()" id="pause_button">
+                            <input type="image" src="images/Streamicon.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="streamicon">
+                            <input type="image" src="images/Buy.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="download">
+                        </div>
                     </div>
-                    <audio controls loop autoplay>
-                        <source src="music/Drink.mp3"
-                            type="audio/ogg">
-                        Your browser dose not Support the audio Tag
-                    </audio>
-                    <div class="col-6 mx-auto text-center">
-                        <h4 class="text-white pt-5 pb-3" style="font-size: 1.5vw;">My Three-Year-Old Hero</h4>
+                    <div class="">
+                        <div id='player' style="position: relative;">
+                            <audio id="music_player">
+                                <source src="music/Three.mp3" />
+                            </audio>
+                            <p style="position: absolute;color: azure; padding: 5px;">2</p>
+                            <input type="image" src="images/Cover_Lyric2.png" id="cover">
+                            <input type="image" src="images/play.png" onclick="play_aud()" id="play_button">
+                            <input type="image" src="images/pause.png" onclick="pause_aud()" id="pause_button">
+                            <input type="image" src="images/Streamicon.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="streamicon">
+                            <input type="image" src="images/Buy.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'https://w3docs.com';" href="music.html" id="download">
+                        </div>
                     </div>
-                    <audio controls loop autoplay>
-                        <source src="music/Three.mp3"
-                            type="audio/ogg">
-                        Your browser dose not Support the audio Tag
-                    </audio>
-                    <div class="col-6 mx-auto text-center">
-                        <h4 class="text-white pt-5 pb-3" style="font-size: 1.5vw;">After You</h4>
+                    <img src="images/cover2-back.jpg" width="700px"
+                        style="float: right;margin-top: -410px;margin-right: -35px;" alt="">
+                    <div class="">
+                        <div id='player' style="position: relative;">
+                            <audio id="music_player">
+                                <source src="music/After.mp3" />
+                            </audio>
+                            <p style="position: absolute;color: azure; padding: 5px;">1</p>
+                            <input type="image" src="images/Cover_Lyric3.png" id="cover">
+                            <input type="image" src="images/play.png" onclick="play_aud()" id="play_button">
+                            <input type="image" src="images/pause.png" onclick="pause_aud()" id="pause_button">
+                            <input type="image" src="images/Streamicon.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="streamicon">
+                            <input type="image" src="images/Buy.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'https://w3docs.com';" id="download">
+                        </div>
                     </div>
-                    <audio controls loop autoplay>
-                        <source src="music/After.mp3"
-                            type="audio/ogg">
-                        Your browser dose not Support the audio Tag
-                    </audio>
+                    <img src="images/cover3-back.jpg" width="700px"
+                        style="float: right;margin-top: -410px;margin-right: -35px;" alt="">
                 </div>
             </div>
         </div>
@@ -95,3 +178,19 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () { startplayer(); }, false);
+    var player;
+
+    function startplayer() {
+        player = document.getElementById('music_player');
+        player.controls = false;
+    }
+    function play_aud() {
+        player.play();
+    }
+    function pause_aud() {
+        player.pause();
+    }
+</script>
