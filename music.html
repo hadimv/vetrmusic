@@ -154,7 +154,7 @@
                                 <div id="myprogressBarmusic1"></div>
                             </div>
                             <span class="current" style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
-                            <span class="duration" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music1" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
                             <input type="image" src="images/play.png" onclick="play('music1')" id="play_button">
                             <input type="image" src="images/pause.png" onclick="pause('music1')" id="pause_button">
@@ -189,7 +189,7 @@
                                 <div id="myprogressBarmusic2"></div>
                             </div>
                             <span class="current" style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
-                            <span class="duration" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music2" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
                             <p style="position: absolute;color: azure; padding: 5px;">02</p>
                             <input type="image" src="images/Cover_Lyric2.png" id="cover">
@@ -228,7 +228,7 @@
                                 <div id="myprogressBarmusic3"></div>
                             </div>
                             <span class="current" style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
-                            <span class="duration" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music3" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                         
                             <p style="position: absolute;color: azure; padding: 5px;">01</p>
                             <input type="image" src="images/Cover_Lyric3.png" id="cover">
@@ -282,19 +282,19 @@
         duration(player);
     }
     function current(player) {
-        var audio = player;
+        var audio = document.getElementById(player);
         if (audio.readyState > 0) {
             var minutes = parseInt(audio.currentTime / 60, 10);
             var seconds = parseInt(audio.currentTime % 60);
-            $(".current-"+player).html(minutes + ":" + seconds);
+            $("#current-"+player).html(minutes + ":" + seconds);
         }
     }
     function duration(player) {
-        var audio = player;
+        var audio = document.getElementById(player);
         if (audio.readyState > 0) {
             var minutes = parseInt(audio.duration / 60, 10);
             var seconds = parseInt(audio.duration % 60);
-            $(".duration-"+player).html(minutes + ":" + seconds);
+            $("#duration-"+player).html(minutes + ":" + seconds);
         }
     }
 </script>
