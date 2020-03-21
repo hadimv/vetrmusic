@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <title>Vetr</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -28,17 +26,15 @@
             margin-top: 450px;
         }
 
-        #play_button {
+        #play-music1, #pause-music1 {
             height: 30px;
             margin-left: 340px;
             margin-right: 0px;
             margin-top: 2px;
         }
 
-        #pause_button {
-            height: 30px;
-            margin-right: 9px;
-            margin-top: 2px;
+        #pause-music1 {
+           display: none;
         }
 
         #cover {
@@ -79,7 +75,8 @@
 
         #myprogressBarmusic1,
         #myprogressBarmusic2,
-        #myprogressBarmusic3 {
+        #myprogressBarmusic3,
+        #myprogressBarmusic4 {
             width: 0;
             height: 7px;
             background-color: #ffffff;
@@ -90,7 +87,6 @@
             float: right;
             margin-top: -420px;
             margin-right: -70px;
-            position: relative;
         }
 
         @media (max-width: 992px) {
@@ -145,7 +141,6 @@
 
             <div class="col-11 mx-auto">
                 <div class="container-audio">
-                    <img src="images/cover1-back.jpg" width="700px" class="cover" alt="">
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
@@ -169,13 +164,13 @@
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic1"></div>
                             </div>
-                            <span class="current"
+                            <span id="current-music1"
                                 style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
                             <span id="duration-music1"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
-                            <input type="image" src="images/play.png" onclick="play('music1')" id="play_button">
-                            <input type="image" src="images/pause.png" onclick="pause('music1')" id="pause_button">
+                            <input type="image" src="images/play.png" onclick="toggle('music1')" id="play-music1">
+                            <input type="image" src="images/pause.png" onclick="toggle('music1')" id="pause-music1" >
                             <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
                                 id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
@@ -183,6 +178,8 @@
                                 id="download">
                         </div>
                     </div>
+                    <img src="images/cover1-back.jpg" width="700px" class="cover" alt="">
+
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
@@ -205,7 +202,7 @@
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic2"></div>
                             </div>
-                            <span class="current"
+                            <span id="current-music2"
                                 style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
                             <span id="duration-music2"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
@@ -222,6 +219,7 @@
                         </div>
                     </div>
                     <img src="images/cover2-back.jpg" width="700px" class="cover" alt="">
+
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
@@ -244,15 +242,15 @@
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic3"></div>
                             </div>
-                            <span class="current"
+                            <span id="current-music3"
                                 style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
                             <span id="duration-music3"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
 
                             <p style="position: absolute;color: azure; padding: 5px;">01</p>
                             <input type="image" src="images/Cover_Lyric3.png" id="cover">
-                            <input type="image" src="images/play.png" onclick="play('music3')" id="play_button">
-                            <input type="image" src="images/pause.png" onclick="pause('music3')" id="pause_button">
+                            <input type="image" src="images/play.png" onclick="play('music3')" class="play-btn" id="">
+                            <input type="image" src="images/pause.png" onclick="pause('music3')" class="puase-btn" id="">
                             <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
                                 id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
@@ -260,11 +258,8 @@
                                 id="download">
                         </div>
                     </div>
+                    <img src="images/cover3-back.jpg" width="700px" class="cover" alt="">
 
-                    <div>
-                        <img src="images/cover3-back.jpg" width="700px" class="cover" alt="">
-
-                    </div>
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
@@ -282,12 +277,12 @@
                                 </ul>
                             </div>
                             <audio id="music4">
-                                <source src="http://vetrmusic.com/music/WhenIHearYourName.mp3" />
+                                <source src="/music/WhenIHearYourName.mp3" />
                             </audio>
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic4"></div>
                             </div>
-                            <span class="current"
+                            <span id="current-music4"
                                 style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
                             <span id="duration-music4"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
@@ -309,52 +304,69 @@
         </div>
 
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+        <script>
+            function update(player) {
+                var music_player = document.getElementById(player);
+                var element = document.getElementById("myprogressBar" + player);
+                var width = 0;
+                var identity = setInterval(scene, 10);
+                function scene() {
+                    if (width >= 100) {
+                        clearInterval(identity);
+                    } else {
+                        width = (music_player.currentTime / music_player.duration) * 100;
+                        element.style.width = width + "%";
+                        current(player);
+                    }
+                }
+            }
+            function toggle(player){
+                var input = document.getElementById(player);
+                if(input.paused){
+                    play(player)
+                    $('#play-'+player).hide()
+                    $('#pause-'+player).show()
+                } else {
+                    pause(player)
+                    $('#pause-'+player).hide()
+                    $('#play-'+player).show()
+                }
+            }
+            function pause(player) {
+                var input = document.getElementById(player);
+                input.pause()
+            }
+            function play(player) {
+                var input = document.getElementById(player);
+                input.play()
+                update(player);
+                duration(player);
+            }
+            function current(player) {
+                var audio = document.getElementById(player);
+                if (audio.readyState > 0) {
+                    var minutes = parseInt(audio.currentTime / 60, 10);
+                    var seconds = parseInt(audio.currentTime % 60);
+                    $("#current-" + player).html(minutes + ":" + seconds);
+                }
+            }
+            function duration(player) {
+                var audio = document.getElementById(player);
+                if (audio.readyState > 0) {
+                    var minutes = parseInt(audio.duration / 60, 10);
+                    var seconds = parseInt(audio.duration % 60);
+                    $("#duration-" + player).html(minutes + ":" + seconds);
+                }
+            }
+        </script>
+
 </body>
 
 </html>
-
-<script>
-
-    function pause(player) {
-        document.getElementById(player).pause()
-    }
-    function update(player) {
-        var music_player = document.getElementById(player);
-        var element = document.getElementById("myprogressBar" + player);
-        var width = 0;
-        var identity = setInterval(scene, 10);
-        function scene() {
-            if (width >= 100) {
-                clearInterval(identity);
-            } else {
-                width = (music_player.currentTime / music_player.duration) * 100;
-                element.style.width = width + "%";
-                current(player);
-            }
-        }
-    }
-    function play(player) {
-        document.getElementById(player).play();
-        update(player);
-        duration(player);
-    }
-    function current(player) {
-        var audio = document.getElementById(player);
-        if (audio.readyState > 0) {
-            var minutes = parseInt(audio.currentTime / 60, 10);
-            var seconds = parseInt(audio.currentTime % 60);
-            $("#current-" + player).html(minutes + ":" + seconds);
-        }
-    }
-    function duration(player) {
-        var audio = document.getElementById(player);
-        if (audio.readyState > 0) {
-            var minutes = parseInt(audio.duration / 60, 10);
-            var seconds = parseInt(audio.duration % 60);
-            $("#duration-" + player).html(minutes + ":" + seconds);
-        }
-    }
-</script>
