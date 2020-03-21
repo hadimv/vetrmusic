@@ -77,11 +77,28 @@
             border-radius: 8px;
         }
 
-        #myprogressBarmusic1,#myprogressBarmusic2, #myprogressBarmusic3  {
+        #myprogressBarmusic1,
+        #myprogressBarmusic2,
+        #myprogressBarmusic3 {
             width: 0;
             height: 7px;
             background-color: #ffffff;
             border-radius: 8px;
+        }
+
+        .cover {
+            float: right;
+            margin-top: -420px;
+            margin-right: -70px;
+            position: relative;
+        }
+
+        @media (max-width: 992px) {
+            .cover {
+                float: right;
+                margin-top: -410px;
+                margin-right: -200px;
+            }
         }
     </style>
 </head>
@@ -128,8 +145,7 @@
 
             <div class="col-11 mx-auto">
                 <div class="container-audio">
-                    <img src="images/cover1-back.jpg" width="700px"
-                        style="float: right;margin-top: -410px;margin-right: -35px;" alt="">
+                    <img src="images/cover1-back.jpg" width="700px" class="cover" alt="">
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
@@ -153,17 +169,18 @@
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic1"></div>
                             </div>
-                            <span class="current" style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
-                            <span id="duration-music1" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span class="current"
+                                style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music1"
+                                style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
                             <input type="image" src="images/play.png" onclick="play('music1')" id="play_button">
                             <input type="image" src="images/pause.png" onclick="pause('music1')" id="pause_button">
-                            <input type="image" src="images/Streamicon.png"
-                                onclick="window.location.href = '';" id="streamicon">
-                            <input type="image" src="images/Buy.png"
-                                onclick="window.location.href = '';" id="buy">
-                            <input type="image" src="images/Downloadicon.png"
-                                onclick="window.location.href = '';" id="download">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                                id="streamicon">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
+                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
+                                id="download">
                         </div>
                     </div>
                     <div class="">
@@ -188,23 +205,23 @@
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic2"></div>
                             </div>
-                            <span class="current" style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
-                            <span id="duration-music2" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span class="current"
+                                style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music2"
+                                style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
                             <p style="position: absolute;color: azure; padding: 5px;">02</p>
                             <input type="image" src="images/Cover_Lyric2.png" id="cover">
                             <input type="image" src="images/play.png" onclick="play('music2')" id="play_button">
                             <input type="image" src="images/pause.png" onclick="pause('music2')" id="pause_button">
-                            <input type="image" src="images/Streamicon.png"
-                                onclick="window.location.href = '';" id="streamicon">
-                            <input type="image" src="images/Buy.png"
-                                onclick="window.location.href = '';" id="buy">
-                            <input type="image" src="images/Downloadicon.png"
-                                onclick="window.location.href = '';" href="music.html" id="download">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                                id="streamicon">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
+                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
+                                href="music.html" id="download">
                         </div>
                     </div>
-                    <img src="images/cover2-back.jpg" width="700px"
-                        style="float: right;margin-top: -410px;margin-right: -35px;" alt="">
+                    <img src="images/cover2-back.jpg" width="700px" class="cover" alt="">
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
@@ -227,23 +244,66 @@
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic3"></div>
                             </div>
-                            <span class="current" style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
-                            <span id="duration-music3" style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
-                        
+                            <span class="current"
+                                style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music3"
+                                style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+
                             <p style="position: absolute;color: azure; padding: 5px;">01</p>
                             <input type="image" src="images/Cover_Lyric3.png" id="cover">
                             <input type="image" src="images/play.png" onclick="play('music3')" id="play_button">
                             <input type="image" src="images/pause.png" onclick="pause('music3')" id="pause_button">
-                            <input type="image" src="images/Streamicon.png"
-                                onclick="window.location.href = '';" id="streamicon">
-                            <input type="image" src="images/Buy.png"
-                                onclick="window.location.href = '';" id="buy">
-                            <input type="image" src="images/Downloadicon.png"
-                                onclick="window.location.href = '';" id="download">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                                id="streamicon">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
+                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
+                                id="download">
                         </div>
                     </div>
-                    <img src="images/cover3-back.jpg" width="700px"
-                        style="float: right;margin-top: -410px;margin-right: -35px;" alt="">
+
+                    <div>
+                        <img src="images/cover3-back.jpg" width="700px" class="cover" alt="">
+
+                    </div>
+                    <div class="">
+                        <div id='player' style="position: relative;">
+                            <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
+                                <style>
+                                    .info>li {
+                                        display: inline;
+                                    }
+                                </style>
+                                <ul class="info p-1" style="list-style: none;list-style-type: none;">
+                                    <li>#</li>
+                                    <li style="margin-left:645px">Duration</li>
+                                    <li style="margin-left:40px">Stream</li>
+                                    <li style="margin-left:30px">Buy</li>
+                                    <li style="margin-left:15px">Download</li>
+                                </ul>
+                            </div>
+                            <audio id="music4">
+                                <source src="http://vetrmusic.com/music/WhenIHearYourName.mp3" />
+                            </audio>
+                            <div id="Progress_Status">
+                                <div id="myprogressBarmusic4"></div>
+                            </div>
+                            <span class="current"
+                                style="position: absolute;margin-left: 657px;margin-top: 5px;color: blanchedalmond;"></span>
+                            <span id="duration-music4"
+                                style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
+
+                            <p style="position: absolute;color: azure; padding: 5px;">01</p>
+                            <input type="image" src="images/Cover_Lyric4.png" id="cover">
+                            <input type="image" src="images/play.png" onclick="play('music4')" id="play_button">
+                            <input type="image" src="images/pause.png" onclick="pause('music4')" id="pause_button">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                                id="streamicon">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
+                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
+                                id="download">
+                        </div>
+                    </div>
+                    <img src="images/cover4-back.jpg" width="700px" class="cover" alt="">
                 </div>
             </div>
         </div>
@@ -257,13 +317,13 @@
 </html>
 
 <script>
-    
+
     function pause(player) {
         document.getElementById(player).pause()
     }
     function update(player) {
-        var music_player =  document.getElementById(player);
-        var element = document.getElementById("myprogressBar"+player);
+        var music_player = document.getElementById(player);
+        var element = document.getElementById("myprogressBar" + player);
         var width = 0;
         var identity = setInterval(scene, 10);
         function scene() {
@@ -286,7 +346,7 @@
         if (audio.readyState > 0) {
             var minutes = parseInt(audio.currentTime / 60, 10);
             var seconds = parseInt(audio.currentTime % 60);
-            $("#current-"+player).html(minutes + ":" + seconds);
+            $("#current-" + player).html(minutes + ":" + seconds);
         }
     }
     function duration(player) {
@@ -294,7 +354,7 @@
         if (audio.readyState > 0) {
             var minutes = parseInt(audio.duration / 60, 10);
             var seconds = parseInt(audio.duration % 60);
-            $("#duration-"+player).html(minutes + ":" + seconds);
+            $("#duration-" + player).html(minutes + ":" + seconds);
         }
     }
 </script>
