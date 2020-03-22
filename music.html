@@ -26,15 +26,32 @@
             margin-top: 450px;
         }
 
-        #play-music1, #pause-music1 {
+        #play-music1,
+        #play-music2,
+        #play-music3,
+        #play-music4 {
             height: 30px;
             margin-left: 340px;
             margin-right: 0px;
             margin-top: 2px;
         }
 
-        #pause-music1 {
-           display: none;
+        #pause-music1,
+        #pause-music2,
+        #pause-music3,
+        #pause-music4 {
+            height: 30px;
+            margin-left: 340px;
+            margin-right: -3px;
+            margin-top: 2px;
+            display: none;
+        }
+
+        #pause-music1,
+        #pause-music2,
+        #pause-music3,
+        #pause-music4 {
+            display: none;
         }
 
         #cover {
@@ -49,7 +66,7 @@
         #streamicon {
             height: 17px;
             margin: 7px;
-            margin-left: 365px;
+            margin-left: 410px;
         }
 
         #buy {
@@ -67,8 +84,8 @@
         #Progress_Status {
             position: absolute;
             margin: 14px;
-            margin-left: 410px;
-            width: 230px;
+            margin-left: 375px;
+            width: 270px;
             background-color: rgb(153, 153, 153);
             border-radius: 8px;
         }
@@ -160,7 +177,7 @@
                             <audio id="music1">
                                 <source src="http://vetrmusic.com/music/Drink.mp3" />
                             </audio>
-                            <p style="position: absolute;color: azure; padding: 5px;">03</p>
+                            <p style="position: absolute;color: azure; padding: 5px;">04</p>
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic1"></div>
                             </div>
@@ -170,8 +187,8 @@
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
                             <input type="image" src="images/play.png" onclick="toggle('music1')" id="play-music1">
-                            <input type="image" src="images/pause.png" onclick="toggle('music1')" id="pause-music1" >
-                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                            <input type="image" src="images/pause.png" onclick="toggle('music1')" id="pause-music1">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'dsw.html';"
                                 id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
                             <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
@@ -207,11 +224,11 @@
                             <span id="duration-music2"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
-                            <p style="position: absolute;color: azure; padding: 5px;">02</p>
+                            <p style="position: absolute;color: azure; padding: 5px;">03</p>
                             <input type="image" src="images/Cover_Lyric2.png" id="cover">
-                            <input type="image" src="images/play.png" onclick="play('music2')" id="play_button">
-                            <input type="image" src="images/pause.png" onclick="pause('music2')" id="pause_button">
-                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                            <input type="image" src="images/play.png" onclick="toggle('music2')" id="play-music2">
+                            <input type="image" src="images/pause.png" onclick="toggle('music2')" id="pause-music2">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'tyoh.html';"
                                 id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
                             <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
@@ -247,11 +264,11 @@
                             <span id="duration-music3"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
 
-                            <p style="position: absolute;color: azure; padding: 5px;">01</p>
+                            <p style="position: absolute;color: azure; padding: 5px;">02</p>
                             <input type="image" src="images/Cover_Lyric3.png" id="cover">
-                            <input type="image" src="images/play.png" onclick="play('music3')" class="play-btn" id="">
-                            <input type="image" src="images/pause.png" onclick="pause('music3')" class="puase-btn" id="">
-                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                            <input type="image" src="images/play.png" onclick="toggle('music3')" id="play-music3">
+                            <input type="image" src="images/pause.png" onclick="toggle('music3')" id="pause-music3">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'ay.html';"
                                 id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
                             <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
@@ -277,7 +294,7 @@
                                 </ul>
                             </div>
                             <audio id="music4">
-                                <source src="/music/WhenIHearYourName.mp3" />
+                                <source src="music/WhenIHearYourName.mp3" />
                             </audio>
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic4"></div>
@@ -289,9 +306,9 @@
 
                             <p style="position: absolute;color: azure; padding: 5px;">01</p>
                             <input type="image" src="images/Cover_Lyric4.png" id="cover">
-                            <input type="image" src="images/play.png" onclick="play('music4')" id="play_button">
-                            <input type="image" src="images/pause.png" onclick="pause('music4')" id="pause_button">
-                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = '';"
+                            <input type="image" src="images/play.png" onclick="toggle('music4')" id="play-music4">
+                            <input type="image" src="images/pause.png" onclick="toggle('music4')" id="pause-music4">
+                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'wi.html';"
                                 id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
                             <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
@@ -304,68 +321,76 @@
         </div>
 
     </div>
-    
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 " style="margin-top: 50px;">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Copyright © VetrMusic 2020 | All Rights Reserved.
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-        <script>
-            function update(player) {
-                var music_player = document.getElementById(player);
-                var element = document.getElementById("myprogressBar" + player);
-                var width = 0;
-                var identity = setInterval(scene, 10);
-                function scene() {
-                    if (width >= 100) {
-                        clearInterval(identity);
-                    } else {
-                        width = (music_player.currentTime / music_player.duration) * 100;
-                        element.style.width = width + "%";
-                        current(player);
-                    }
-                }
-            }
-            function toggle(player){
-                var input = document.getElementById(player);
-                if(input.paused){
-                    play(player)
-                    $('#play-'+player).hide()
-                    $('#pause-'+player).show()
+    <script>
+        function update(player) {
+            var music_player = document.getElementById(player);
+            var element = document.getElementById("myprogressBar" + player);
+            var width = 0;
+            var identity = setInterval(scene, 10);
+            function scene() {
+                if (width >= 100) {
+                    clearInterval(identity);
                 } else {
-                    pause(player)
-                    $('#pause-'+player).hide()
-                    $('#play-'+player).show()
+                    width = (music_player.currentTime / music_player.duration) * 100;
+                    element.style.width = width + "%";
+                    current(player);
                 }
             }
-            function pause(player) {
-                var input = document.getElementById(player);
-                input.pause()
+        }
+        function toggle(player) {
+            var input = document.getElementById(player);
+            if (input.paused) {
+                play(player)
+                $('#play-' + player).hide()
+                $('#pause-' + player).show()
+            } else {
+                pause(player)
+                $('#pause-' + player).hide()
+                $('#play-' + player).show()
             }
-            function play(player) {
-                var input = document.getElementById(player);
-                input.play()
-                update(player);
-                duration(player);
+        }
+        function pause(player) {
+            var input = document.getElementById(player);
+            input.pause()
+        }
+        function play(player) {
+            var input = document.getElementById(player);
+            input.play()
+            update(player);
+            duration(player);
+        }
+        function current(player) {
+            var audio = document.getElementById(player);
+            if (audio.readyState > 0) {
+                var minutes = parseInt(audio.currentTime / 60, 10);
+                var seconds = parseInt(audio.currentTime % 60);
+                $("#current-" + player).html(minutes + ":" + seconds);
             }
-            function current(player) {
-                var audio = document.getElementById(player);
-                if (audio.readyState > 0) {
-                    var minutes = parseInt(audio.currentTime / 60, 10);
-                    var seconds = parseInt(audio.currentTime % 60);
-                    $("#current-" + player).html(minutes + ":" + seconds);
-                }
+        }
+        function duration(player) {
+            var audio = document.getElementById(player);
+            if (audio.readyState > 0) {
+                var minutes = parseInt(audio.duration / 60, 10);
+                var seconds = parseInt(audio.duration % 60);
+                $("#duration-" + player).html(minutes + ":" + seconds);
             }
-            function duration(player) {
-                var audio = document.getElementById(player);
-                if (audio.readyState > 0) {
-                    var minutes = parseInt(audio.duration / 60, 10);
-                    var seconds = parseInt(audio.duration % 60);
-                    $("#duration-" + player).html(minutes + ":" + seconds);
-                }
-            }
-        </script>
+        }
+    </script>
 
 </body>
 
