@@ -17,6 +17,10 @@
             width: 100%;
         }
 
+        .info>li {
+            display: inline;
+        }
+
         #player {
             border-radius: 300px;
             background-color: #265AA6;
@@ -30,21 +34,24 @@
         #play-music2,
         #play-music3,
         #play-music4 {
-            height: 30px;
+            height: 22px;
             margin-left: 340px;
             margin-right: 0px;
             margin-top: 2px;
+            margin-bottom: 3px;
         }
 
         #pause-music1,
         #pause-music2,
         #pause-music3,
         #pause-music4 {
-            height: 30px;
+            height: 23px;
             margin-left: 340px;
             margin-right: -3px;
             margin-top: 2px;
             display: none;
+            margin-bottom: 3px;
+
         }
 
         #pause-music1,
@@ -53,6 +60,7 @@
         #pause-music4 {
             display: none;
         }
+
 
         #cover {
             border-radius: 10px;
@@ -66,7 +74,7 @@
         #streamicon {
             height: 17px;
             margin: 7px;
-            margin-left: 410px;
+            margin-left: 415px;
         }
 
         #buy {
@@ -84,7 +92,7 @@
         #Progress_Status {
             position: absolute;
             margin: 14px;
-            margin-left: 375px;
+            margin-left: 370px;
             width: 270px;
             background-color: rgb(153, 153, 153);
             border-radius: 8px;
@@ -95,7 +103,7 @@
         #myprogressBarmusic3,
         #myprogressBarmusic4 {
             width: 0;
-            height: 7px;
+            height: 5px;
             background-color: #ffffff;
             border-radius: 8px;
         }
@@ -104,6 +112,11 @@
             float: right;
             margin-top: -420px;
             margin-right: -70px;
+            opacity: 0.8;
+        }
+        .cover:hover {
+            opacity: 0.6;
+            
         }
 
         @media (max-width: 992px) {
@@ -111,6 +124,7 @@
                 float: right;
                 margin-top: -410px;
                 margin-right: -200px;
+                opacity: 0.8;
             }
         }
     </style>
@@ -228,8 +242,8 @@
                             <input type="image" src="images/Cover_Lyric2.png" id="cover">
                             <input type="image" src="images/play.png" onclick="toggle('music2')" id="play-music2">
                             <input type="image" src="images/pause.png" onclick="toggle('music2')" id="pause-music2">
-                            <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'tyoh.html';"
-                                id="streamicon">
+                            <input type="image" src="images/Streamicon.png"
+                                onclick="window.location.href = 'tyoh.html';" id="streamicon">
                             <input type="image" src="images/Buy.png" onclick="window.location.href = '';" id="buy">
                             <input type="image" src="images/Downloadicon.png" onclick="window.location.href = '';"
                                 href="music.html" id="download">
@@ -240,11 +254,6 @@
                     <div class="">
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
-                                <style>
-                                    .info>li {
-                                        display: inline;
-                                    }
-                                </style>
                                 <ul class="info p-1" style="list-style: none;list-style-type: none;">
                                     <li>#</li>
                                     <li style="margin-left:645px">Duration</li>
@@ -281,9 +290,7 @@
                         <div id='player' style="position: relative;">
                             <div class="text-secondary" style="margin-top: -35px;margin-bottom: -13px;">
                                 <style>
-                                    .info>li {
-                                        display: inline;
-                                    }
+
                                 </style>
                                 <ul class="info p-1" style="list-style: none;list-style-type: none;">
                                     <li>#</li>

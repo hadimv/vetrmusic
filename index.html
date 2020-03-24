@@ -21,6 +21,33 @@
                 background-size: auto;
             }
         }
+        .info {
+            position: fixed;
+            left: 0;
+            bottom: 50px;
+            width: 100%;
+            text-align: center;
+
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: #e95817;
+        }
+
+        .info>li {
+            display: inline;
+        }
+        a:hover {
+            text-decoration: none;
+
+        }
+        .nav-link {
+            color: #e95817;
+        }
     </style>
 </head>
 
@@ -34,24 +61,24 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse pt-md-1" id="navbarText">
-                    <ul class="navbar-nav mt-1 mx-auto">
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="index.html">HOME</a>
+                    <ul class="navbar-nav mt-1 mx-auto" >
+                        <li class="nav-item px-3" >
+                            <a class="nav-link active" style="color: #e95817;" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="music.html">MUSIC</a>
+                            <a class="nav-link" style="color: #e95817;" href="music.html">MUSIC</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="video.html">VIDEO</a>
+                            <a class="nav-link" style="color: #e95817;" href="video.html">VIDEO</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="lyric.html">LYRIC</a>
+                            <a class="nav-link" style="color: #e95817;" href="lyric.html">LYRIC</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <a class="nav-link" style="color: #e95817;" href="about.html">ABOUT</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" style="color: #e95817;" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
 
@@ -60,54 +87,48 @@
         </div>
         <div class="content">
             <div class="row">
-                <div class="col-md-11"></div>
                 <div class="content">
-                    <div class="row">
-                        <div class="social float-right">
-                            <ul class="list-unstyled">
-                                <li class="py-2">
-                                    <a href="https://music.apple.com/us/artist/vetr/1456667173" target="_blank">
-                                        <img width="20px" src="images/iTunes.png" alt="">
+                    <div class="">
+                        <div class="social">
+                            <ul class="info" style="list-style: none;list-style-type: none;">
+                                <li class="mx-2">
+                                    <a href="https://music.apple.com/us/artist/vetr/1456667173">
+                                        <img width="25px" src="images/iTunes.png" alt="">
                                     </a>
                                 </li>
-                                <li class="py-2">
+                                <li class="mx-2">
                                     <a href="https://open.spotify.com/artist/3OcSvvEkZToGZ2PU2awKxm?si=JK6nXlgOQsSNmK1tZLeczA"
-                                        target="_blank">
-                                        <img width="20px" src="images/Sptify.png" alt="">
+                                        >
+                                        <img width="25px" src="images/Sptify.png" alt="">
                                     </a>
                                 </li>
-                                <li class="py-2">
+                                <li class="mx-2">
                                     <a href="https://www.youtube.com/channel/UCRyQssp0O63Y8dc79LIjV8g?view_as=subscriber"
-                                        target="_blank">
-                                        <img width="20px" src="images/YouTube.png" alt="">
+                                        >
+                                        <img width="25px" src="images/YouTube.png" alt="">
                                     </a>
                                 </li>
-                                <li class="py-2">
-                                    <a href="http://instagram.com/vetrmusic" target="_blank">
-                                        <img width="20px" src="images/Instagram.png" alt="">
+                                <li class="mx-2">
+                                    <a href="http://instagram.com/vetrmusic">
+                                        <img width="25px" src="images/Instagram.png" alt="">
                                     </a>
                                 </li>
-                                <li class="py-2">
-                                    <a href="http://soundcloud.com/vetr" target="_blank">
-                                        <img width="20px" src="images/SoundCloud.png" alt="">
+                                <li class="mx-2">
+                                    <a href="http://soundcloud.com/vetr" >
+                                        <img width="25px" src="images/SoundCloud.png" alt="">
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-md-1">
-
-                    </div>
-
                 </div>
             </div>
 
         </div>
         <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4 " style="margin-top: 240px;">
+        <footer class="footer pt-4">
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">Copyright © VetrMusic 2020 | All Rights Reserved.
+            <div class="footer-copyright py-3">Copyright © VetrMusic 2020 | All Rights Reserved.
             </div>
             <!-- Copyright -->
 
