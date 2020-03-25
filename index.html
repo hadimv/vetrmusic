@@ -21,32 +21,26 @@
                 background-size: auto;
             }
         }
-        .info {
-            position: fixed;
-            left: 0;
-            bottom: 50px;
-            width: 100%;
-            text-align: center;
 
-        }
         .footer {
+            background-color: rgb(44, 44, 44);
             position: fixed;
+            padding: 0px;
             left: 0;
             bottom: 0;
             width: 100%;
+            height: 30px;
             text-align: center;
-            color: #e95817;
+            color: #ffffff;
         }
 
         .info>li {
             display: inline;
         }
+
         a:hover {
             text-decoration: none;
 
-        }
-        .nav-link {
-            color: #e95817;
         }
     </style>
 </head>
@@ -61,79 +55,63 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse pt-md-1" id="navbarText">
-                    <ul class="navbar-nav mt-1 mx-auto" >
-                        <li class="nav-item px-3" >
-                            <a class="nav-link active" style="color: #e95817;" href="index.html">HOME</a>
+                    <ul class="navbar-nav mt-1 mx-auto">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" style="color: #e95817;" href="music.html">MUSIC</a>
+                            <a class="nav-link" href="music.html">MUSIC</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" style="color: #e95817;" href="video.html">VIDEO</a>
+                            <a class="nav-link" href="video.html">VIDEO</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" style="color: #e95817;" href="lyric.html">LYRIC</a>
+                            <a class="nav-link" href="lyric.html">LYRIC</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" style="color: #e95817;" href="about.html">ABOUT</a>
+                            <a class="nav-link" href="about.html">ABOUT</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link" style="color: #e95817;" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
 
                 </div>
             </nav>
         </div>
-        <div class="content">
-            <div class="row">
-                <div class="content">
-                    <div class="">
-                        <div class="social">
-                            <ul class="info" style="list-style: none;list-style-type: none;">
-                                <li class="mx-2">
-                                    <a href="https://music.apple.com/us/artist/vetr/1456667173">
-                                        <img width="25px" src="images/iTunes.png" alt="">
-                                    </a>
-                                </li>
-                                <li class="mx-2">
-                                    <a href="https://open.spotify.com/artist/3OcSvvEkZToGZ2PU2awKxm?si=JK6nXlgOQsSNmK1tZLeczA"
-                                        >
-                                        <img width="25px" src="images/Sptify.png" alt="">
-                                    </a>
-                                </li>
-                                <li class="mx-2">
-                                    <a href="https://www.youtube.com/channel/UCRyQssp0O63Y8dc79LIjV8g?view_as=subscriber"
-                                        >
-                                        <img width="25px" src="images/YouTube.png" alt="">
-                                    </a>
-                                </li>
-                                <li class="mx-2">
-                                    <a href="http://instagram.com/vetrmusic">
-                                        <img width="25px" src="images/Instagram.png" alt="">
-                                    </a>
-                                </li>
-                                <li class="mx-2">
-                                    <a href="http://soundcloud.com/vetr" >
-                                        <img width="25px" src="images/SoundCloud.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Footer -->
-        <footer class="footer pt-4">
-            <!-- Copyright -->
-            <div class="footer-copyright py-3">Copyright © VetrMusic 2020 | All Rights Reserved.
-            </div>
-            <!-- Copyright -->
-
+        <footer class="footer py-1">
+            <ul class="info" style="list-style: none;list-style-type: none;">
+                <li class="mx-1">
+                    © VetrMusic 2020 &nbsp; |
+                </li>
+                <li class="mx-1">
+                    <a href="https://music.apple.com/us/artist/vetr/1456667173">
+                        <img width="20px" src="images/iTunes.png" alt="">
+                    </a>
+                </li>
+                <li class="mx-1">
+                    <a href="https://open.spotify.com/artist/3OcSvvEkZToGZ2PU2awKxm?si=JK6nXlgOQsSNmK1tZLeczA">
+                        <img width="20px" src="images/Sptify.png" alt="">
+                    </a>
+                </li>
+                <li class="mx-1">
+                    <a href="https://www.youtube.com/channel/UCRyQssp0O63Y8dc79LIjV8g?view_as=subscriber">
+                        <img width="20px" src="images/YouTube.png" alt="">
+                    </a>
+                </li>
+                <li class="mx-1">
+                    <a href="http://instagram.com/vetrmusic">
+                        <img width="20px" src="images/Instagram.png" alt="">
+                    </a>
+                </li>
+                <li class="mx-1">
+                    <a href="http://soundcloud.com/vetr">
+                        <img width="20px" src="images/SoundCloud.png" alt="">
+                    </a>
+                    &nbsp; &nbsp; &nbsp;
+                </li>
+            </ul>
         </footer>
-        <!-- Footer -->
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
