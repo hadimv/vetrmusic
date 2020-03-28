@@ -18,22 +18,36 @@
                 font-size: 16px;
             }
         }
+
         @media (min-width: 990px) and (max-width: 1196px) {
-            p {
-                font-size: 11.8px;
-            }
-        }
-        @media (min-width: 768px) and (max-width: 990px) {
-            p {
-                font-size: 6.7px;
-            }
-        }
-        @media (max-width: 768px) {
             p {
                 font-size: 14px;
             }
         }
+
+        @media (min-width: 768px) and (max-width: 990px) {
+            p {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            p {
+                font-size: 15px;
+            }
+        }
+
+        img {
+            transition: .4s ease;
+        }
+
+        .image-cover {
+            opacity: 0.2 !important;
+            transition: .4s ease;
+        }
     </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
 </head>
 
 <body>
@@ -74,14 +88,16 @@
 
         <div class="content">
             <div class="col-6 mx-auto text-center">
-                <h1 class="text-white pt-2 pb-2" style="font-size: 2.5vw;">About Vetr</h1>
+                <h1 id="text" class="text-white pt-2 pb-2" style="font-size: 2.5vw;">About Vetr</h1>
             </div>
 
-            <div id="image" class="col-md-6 mx-auto p-0"
-                style="background-image: url('images/Vetr_Avatar.png');height: 550px;background-size: contain;background-repeat: no-repeat;">
-                <span class="m-5 pb-4 text-white text-center"
+            <div class="text col-md-6 mx-auto p-0" style="height: 550px;" onmouseover="$('#image').addClass('image-cover')"
+                onmouseout="$('#image').removeClass('image-cover');">
+                <img class="col-md-12 mx-auto p-0" id="image" src="images/Vetr_Avatar.png"
+                    style="height: 550px;position: absolute;" alt="">
+                <span id="tx" class="m-5 pb-4 text-white text-center"
                     style="position: absolute;border: blanchedalmond 5px solid;">
-                    <p class="p-4 text-center" >
+                    <p class="p-4 text-center">
                         There is a fire, which is hidden in the hearts. It's a fire, which never grows cold. This is a
                         secret, which the people of the world do not yet know about. This is why Vetr was born, in order
                         to tell more people throughout the world about small bits of this secret with its stories.
@@ -106,8 +122,6 @@
         <!-- Copyright -->
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
