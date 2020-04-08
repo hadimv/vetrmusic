@@ -73,6 +73,7 @@
             margin-right: 5px;
             margin-top: -340px;
         }
+
         #cover-text {
             border-radius: 3px;
             text-align: center;
@@ -86,6 +87,7 @@
             margin-right: 5px;
             margin-top: -20px;
         }
+
         #streamicon {
             height: 17px;
             margin: 7px;
@@ -131,10 +133,11 @@
             opacity: 0.8;
             transition: .3s ease;
         }
+
         .cover:hover {
             opacity: 0.6;
             transition: .3s ease;
-            
+
         }
 
         @media (max-width: 992px) {
@@ -147,14 +150,13 @@
                 transition: .3s ease;
             }
         }
-        
     </style>
 </head>
 
 <body style="position: relative;">
     <div class="container">
         <div class="header text-center pt-4">
-            <img src="images/vetr_logo.png" width="120px" class="" alt="">
+            <a href="index.html"><img href="index.html" src="images/vetr_logo.png" width="120px" class="" alt=""></a>
             <nav class="navbar navbar-expand-lg navbar-dark bg-none">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +209,7 @@
                                 </ul>
                             </div>
                             <audio id="music5">
-                                <source src="" />
+                                <source src="music/Morning.mp3" />
                             </audio>
                             <div id="Progress_Status">
                                 <div id="myprogressBarmusic5"></div>
@@ -219,16 +221,17 @@
 
                             <p style="position: absolute;color: azure; padding: 5px;">05</p>
                             <div>
-                                <img src="images/Cover_Lyric5.png" id="cover"  alt="">
+                                <img src="images/Cover_Lyric5.png" id="cover" alt="">
                                 <span style="position: absolute;" id="cover-text">Morning</span>
                             </div>
                             <input type="image" src="images/play.png" onclick="toggle('music5')" id="play-music4">
                             <input type="image" src="images/pause.png" onclick="toggle('music5')" id="pause-music4">
                             <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'mo.html';"
                                 id="streamicon">
-                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'mo.html';" id="buy">
-                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = 'mo.html';"
-                                id="download">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'mo.html';"
+                                id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'music/Morning.mp3';" id="download">
                         </div>
                     </div>
                     <img src="images/cover5-back.jpg" width="700px" class="cover" alt="">
@@ -258,16 +261,17 @@
 
                             <p style="position: absolute;color: azure; padding: 5px;">04</p>
                             <div>
-                                <img src="images/Cover_Lyric4.png" id="cover"  alt="">
+                                <img src="images/Cover_Lyric4.png" id="cover" alt="">
                                 <span style="position: absolute;" id="cover-text">When I Hear Your Name</span>
                             </div>
                             <input type="image" src="images/play.png" onclick="toggle('music4')" id="play-music4">
                             <input type="image" src="images/pause.png" onclick="toggle('music4')" id="pause-music4">
                             <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'wi.html';"
                                 id="streamicon">
-                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'wi.html';" id="buy">
-                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = 'wi.html';"
-                                id="download">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'wi.html';"
+                                id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'music/WhenIHearYourName.mp3';" id="download">
                         </div>
                     </div>
                     <img src="images/cover4-back.jpg" width="700px" class="cover" alt="">
@@ -293,16 +297,17 @@
                             <span id="duration-music1"
                                 style="position: absolute;margin-left: 695px;margin-top: 5px;color: blanchedalmond;"></span>
                             <div>
-                                <img src="images/Cover_Lyric1.png" id="cover"  alt="">
+                                <img src="images/Cover_Lyric1.png" id="cover" alt="">
                                 <span style="position: absolute;" id="cover-text">Drink Some Water</span>
                             </div>
                             <input type="image" src="images/play.png" onclick="toggle('music1')" id="play-music1">
                             <input type="image" src="images/pause.png" onclick="toggle('music1')" id="pause-music1">
                             <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'dsw.html';"
                                 id="streamicon">
-                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'dsw.html';" id="buy">
-                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = 'dsw.html';"
-                                id="download">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'dsw.html';"
+                                id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'music/Drink.mp3';" id="download">
                         </div>
                     </div>
                     <img src="images/cover1-back.jpg" width="700px" class="cover" alt="">
@@ -329,16 +334,17 @@
                             <input type="image" src="images/Cover_Lyric1.png" id="cover">
                             <p style="position: absolute;color: azure; padding: 5px;">02</p>
                             <div>
-                                <img src="images/Cover_Lyric2.png" id="cover"  alt="">
+                                <img src="images/Cover_Lyric2.png" id="cover" alt="">
                                 <span style="position: absolute;" id="cover-text">My Three-Year-Old Hero</span>
                             </div>
                             <input type="image" src="images/play.png" onclick="toggle('music2')" id="play-music2">
                             <input type="image" src="images/pause.png" onclick="toggle('music2')" id="pause-music2">
                             <input type="image" src="images/Streamicon.png"
                                 onclick="window.location.href = 'tyoh.html';" id="streamicon">
-                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'tyoh.html';" id="buy">
-                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = 'tyoh.html';"
-                                href="music.html" id="download">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'tyoh.html';"
+                                id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'music/Three.mp3';" href="music.html" id="download">
                         </div>
                     </div>
                     <img src="images/cover2-back.jpg" width="700px" class="cover" alt="">
@@ -365,16 +371,17 @@
 
                             <p style="position: absolute;color: azure; padding: 5px;">01</p>
                             <div>
-                                <img src="images/Cover_Lyric3.png" id="cover"  alt="">
+                                <img src="images/Cover_Lyric3.png" id="cover" alt="">
                                 <span style="position: absolute;" id="cover-text">After You</span>
                             </div>
                             <input type="image" src="images/play.png" onclick="toggle('music3')" id="play-music3">
                             <input type="image" src="images/pause.png" onclick="toggle('music3')" id="pause-music3">
                             <input type="image" src="images/Streamicon.png" onclick="window.location.href = 'ay.html';"
                                 id="streamicon">
-                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'ay.html';" id="buy">
-                            <input type="image" src="images/Downloadicon.png" onclick="window.location.href = 'ay.html';"
-                                id="download">
+                            <input type="image" src="images/Buy.png" onclick="window.location.href = 'ay.html';"
+                                id="buy">
+                            <input type="image" src="images/Downloadicon.png"
+                                onclick="window.location.href = 'music/After.mp3';" id="download">
                         </div>
                     </div>
                     <img src="images/cover3-back.jpg" width="700px" class="cover" alt="">
@@ -452,4 +459,5 @@
         }
     </script>
 </body>
+
 </html>
